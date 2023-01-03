@@ -5,7 +5,7 @@ global:
 alerting:
   alertmanagers:
   - static_configs:
-    - targets: []
+    - targets: [localhost: 5000] # before launching, mention target here: localhost: 5000
     scheme: http
     timeout: 10s
     api_version: v1
